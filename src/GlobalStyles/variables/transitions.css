@@ -1,0 +1,5 @@
+:root {
+  --global-transition-fast: .2s ease-in all;
+  --global-transition-slow: .5s ease-in all;
+  --global-animation-slow: .7s;
+}
