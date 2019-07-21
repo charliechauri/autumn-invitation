@@ -1,0 +1,4 @@
+:root {
+  --global-brightness-hover: brightness(.8);
+  --global-brightness-active: brightness(.7);
+}
