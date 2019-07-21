@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
 import Heart from './Components/Heart';
-import Button from './Components/Button';
+import MovieAutumn from './Components/MovieAutumn';
 
 function App() {
   const [displayMessage, toggleDisplayMessage] = useState(false);
-  const [displayMovies, toggleDisplayMovies] = useState(false);
 
   return (
     <div className="App">
@@ -16,14 +15,7 @@ function App() {
           onClick={() => { toggleDisplayMessage(!displayMessage) }}
         />
 
-        {displayMessage &&
-          <div>
-            <h1>
-              Would you like to share a movie autumn together?
-            </h1>
-
-            <Button text="YES!" onClick={ () => { toggleDisplayMovies(!displayMovies) } } />
-          </div>}
+        {displayMessage && <MovieAutumn />}
       </section>
     </div>
   );
