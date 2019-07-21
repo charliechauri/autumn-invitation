@@ -1,0 +1,18 @@
+.button {
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  font-family: var(--global-font-primary);
+  font-size: var(--global-base-size);
+  font-weight: 700;
+  padding: var(--global-base-size);
+  transition: var(--global-transition-fast);
+}
+
+.button:hover {
+  filter: var(--global-brightness-hover);
+  cursor: pointer;
+}
+
+.button:active {
+  filter: var(--global-brightness-active);
+}
