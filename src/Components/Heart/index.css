@@ -1,0 +1,42 @@
+.heart {
+  --base-size: calc(var(--global-base-size) * 5);
+
+  background-color: var(--color-primary);
+  height: var(--base-size);
+  transform: rotate(-45deg);
+  transition: var(--global-transition-fast);
+  width: var(--base-size);
+}
+
+.heart:hover {
+  cursor: pointer;
+}
+
+.heart--animated {
+  animation: beat var(--global-animation-slow) infinite alternate;
+}
+
+.heart--big {
+  --base-size: calc(var(--global-base-size) * 10);
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  height: var(--base-size);
+  position: absolute;
+  width: var(--base-size);
+}
+
+.heart:before {
+  top: calc(var(--base-size) / -2);
+  left: 0;
+}
+
+@keyframes beat{
+	to {
+    transform: rotate(-45deg) scale(1.2);
+  }
+}
