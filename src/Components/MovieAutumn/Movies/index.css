@@ -1,0 +1,12 @@
+.movies {
+  --margin-size: calc(var(--global-base-size) * 2);
+
+  background-color: rgba(144,238,144,.95);
+  border-radius: var(--global-base-size);
+  color: black;
+  left: var(--margin-size);
+  padding: var(--global-base-size);
+  position: fixed;
+  right: var(--margin-size);
+  top: var(--margin-size);
+}

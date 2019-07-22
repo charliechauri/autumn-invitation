@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from '../Button';
+import Movies from './Movies';
 
 function MovieAutumn() {
   const [shouldDisplayMovies, displayMovies] = useState(false);
@@ -12,13 +13,7 @@ function MovieAutumn() {
 
       <Button text="YES!" onClick={() => displayMovies(true)} />
 
-
-      {shouldDisplayMovies &&
-        <ul>
-          <li>
-            Movies 1...
-          </li>
-        </ul>}
+      {shouldDisplayMovies && <Movies />}
     </div>
   );
 }
