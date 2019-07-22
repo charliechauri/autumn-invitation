@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../../Button';
 import MovieList from './MovieList';
+import MoviesDescription from './MoviesDescription';
 import movies from './movies';
 import './index.css';
 
@@ -13,20 +14,8 @@ function Movies() {
           <span role="img" aria-label="party popper">🎉</span>
         </mark>
       </h2>
-      <div>
-        <p>
-          <mark>
-            This is my special selection for us, even though we have watched some of them,
-            I wouldn't care if we repeat <span role="img" aria-label="Hearted person">🥰</span>. It
-            doesn't matter the order, as long as you want to watch all of them!
-          </mark>
-        </p>
-        <p>
-          <mark>
-            I promise you won't regret it!            
-          </mark>
-        </p>
-      </div>
+
+      <MoviesDescription />
 
       <MovieList movies={movies} />
 
