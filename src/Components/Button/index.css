@@ -16,3 +16,8 @@
 .button:active {
   filter: var(--global-brightness-active);
 }
+
+.button--secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+}

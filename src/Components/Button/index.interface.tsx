@@ -1,4 +1,7 @@
+type buttonVariation = 'button--secondary';
+
 export default interface IButton {
-  text: string;
   onClick: () => void;
+  text: string;  
+  variation?: buttonVariation;
 };
