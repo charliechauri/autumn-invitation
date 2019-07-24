@@ -4,7 +4,9 @@
   background-color: rgba(144,238,144,.95);
   border-radius: var(--global-base-size);
   color: black;
+  height: 85vh;
   left: var(--margin-size);
+  overflow-y: auto;
   padding: var(--global-base-size);
   position: fixed;
   right: var(--margin-size);
