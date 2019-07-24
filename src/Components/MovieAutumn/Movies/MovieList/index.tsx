@@ -1,10 +1,11 @@
 import React from 'react';
 import IMovieList from './IMovieList';
+import Movie from './Movie';
 
 function MovieList({ movies }: IMovieList) {
   return (
     <ul className="movie-list">
-      {movies.map(movie => (<li key={movie.name} className="movie-list__item"> {movie.name} </li>))}
+      {movies.map(movie => (<Movie key={movie.name} {...movie}/>))}
     </ul>
   );
 }
