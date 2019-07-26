@@ -1,4 +1,4 @@
-import Movie from './MovieList/Movie/IMovie';
+import Movie from './Movie/IMovie';
 
 const movies: Movie[] = [
   {
