@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../../Button';
-import MovieList from './MovieList';
+import Movie from './Movie';
 import MoviesHeader from './MoviesHeader';
 import MoviesDescription from './MoviesDescription';
 import movies from './movies';
@@ -14,11 +14,13 @@ function Movies() {
 
       <MoviesDescription />
 
-      <MovieList movies={movies} />
+      <section>
+        {movies.map(movie => <Movie {...movie} />)}
+      </section>
 
-      <div>
+      <section>
         <Button text="Let's do this!" onClick={() => { alert('finish!') }} variation="button--secondary"></Button>
-      </div>
+      </section>
     </div>
   );
 }
